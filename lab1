@@ -1,0 +1,157 @@
+clc
+help
+--- help for <strong>clc</strong> ---
+
+ <strong>clc</strong> - Clear Command Window
+    This MATLAB function clears all the text from the Command Window,
+    resulting in a clear screen.
+
+    Syntax
+      <strong>clc</strong>
+
+    See also <a href="matlab:help clear -displayBanner">clear</a>, <a href="matlab:help clf -displayBanner">clf</a>, <a href="matlab:help close -displayBanner">close</a>, <a href="matlab:help home -displayBanner">home</a>
+
+    Introduced in MATLAB before R2006a
+    <a href="matlab:doc clc">Documentation for clc</a>
+
+clc
+help diary
+ <strong>diary</strong> - Log Command Window text to file
+    This MATLAB function toggles logging on and off.
+
+    Syntax
+      <strong>diary</strong>
+      <strong>diary</strong> filename
+      <strong>diary</strong> off
+      <strong>diary</strong> on
+
+    Input Arguments
+      <a href="matlab:web /Applications/MATLAB_R2023b.app/help/matlab/ref/diary.html#d126e380468">filename</a> - Log filename
+        character vector | string
+
+    See also <a href="matlab:help evalc -displayBanner">evalc</a>, <a href="matlab:help type -displayBanner">type</a>
+
+    Introduced in MATLAB before R2006a
+    <a href="matlab:doc diary">Documentation for diary</a>
+
+clc
+c = 1
+
+c =
+
+     1
+
+untitled
+
+ans =
+
+     1     2
+     1     2
+     1     2
+
+Elapsed time is 0.000782 seconds.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('inv')" style="font-weight:bold">inv</a>
+Matrix must be square.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('untitled', '/Users/francescodeidda/Documents/MATLAB/untitled.m', 8)" style="font-weight:bold">untitled</a> (<a href="matlab: opentoline('/Users/francescodeidda/Documents/MATLAB/untitled.m',8,0)">line 8</a>)
+inv(x);
+} 
+untitled
+
+ans =
+
+     1     2     3
+     1     2     3
+     1     2     3
+
+Elapsed time is 0.000275 seconds.
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('untitled', '/Users/francescodeidda/Documents/MATLAB/untitled.m', 8)" style="font-weight:bold">untitled</a> (<a href="matlab: opentoline('/Users/francescodeidda/Documents/MATLAB/untitled.m',8,0)">line 8</a>)
+] 
+Elapsed time is 0.164530 seconds.
+untitled
+Elapsed time is 0.000048 seconds.
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('untitled', '/Users/francescodeidda/Documents/MATLAB/untitled.m', 8)" style="font-weight:bold">untitled</a> (<a href="matlab: opentoline('/Users/francescodeidda/Documents/MATLAB/untitled.m',8,0)">line 8</a>)
+] 
+Elapsed time is 0.000834 seconds.
+ans
+
+ans =
+
+   Inf   Inf   Inf
+   Inf   Inf   Inf
+   Inf   Inf   Inf
+
+clear
+untitled
+save lab1Workspace
+clear
+load lab1Workspace.mat
+whos
+  Name      Size            Bytes  Class     Attributes
+
+  ans       3x3                72  double              
+  x         3x3                72  double              
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+clear
+clear
+clear
+clc
+clear
+help input
+ <strong>input</strong> - Request user input
+    This MATLAB function displays the text in prompt and waits for the user
+    to input a value and press the Return key.
+
+    Syntax
+      x = <strong>input</strong>(prompt)
+      txt = <strong>input</strong>(prompt,"s")
+
+    Input Arguments
+      <a href="matlab:web /Applications/MATLAB_R2023b.app/help/matlab/ref/input.html#btt5u2a-prompt">prompt</a> - Text displayed to user
+        string | character vector
+
+    Output Arguments
+      <a href="matlab:web /Applications/MATLAB_R2023b.app/help/matlab/ref/input.html#btt5u2a-x">x</a> - Result calculated from input
+        array
+      <a href="matlab:web /Applications/MATLAB_R2023b.app/help/matlab/ref/input.html#btt5u2a-str">txt</a> - Exact text of input
+        character vector
+
+    See also <a href="matlab:help keyboard -displayBanner">keyboard</a>, <a href="matlab:help inputdlg -displayBanner">inputdlg</a>, <a href="matlab:help listdlg -displayBanner">listdlg</a>, <a href="matlab:help ginput -displayBanner">ginput</a>, <a href="matlab:help uicontrol -displayBanner">uicontrol</a>
+
+    Introduced in MATLAB before R2006a
+    <a href="matlab:doc input">Documentation for input</a>
+
+pizza
+{Unrecognized function or variable 'pizza'.
+} 
+spizza
+Scegli il piatto:
+tpizza
+tspaghetti
+tpesce spada
+pizza
+Scegli il piatto:
+tpizza
+tspaghetti
+tpesce spada
+pizza
+Scegli il piatto:
+tpizza
+tspaghetti
+tpesce spada
+Scegli il piatto:
+tpizza
+tspaghetti
+tpesce spada
+pizza
+Scegli il piatto:
+t pizza
+t spaghetti
+t pesce spada
+Scegli il piatto:
+ pizza
+ spaghetti
+ pesce spada
